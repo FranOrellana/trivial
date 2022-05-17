@@ -48,28 +48,7 @@
     $sql = "SELECT * FROM preguntes p inner join respostes r on p.id = r.preg_id";
     $result = $conexion -> query($sql);
     
-    $respostes_correctes = array();
-    $preguntes = array();
-    $respostes = array();
-    $i = 1;
-    foreach ($result as $value){
-      //print_r ($value, false);
-      $respostes_correctes[$value["preg_pregunta"]] = $value["resp_correcte"];
-      $preguntes[$i] = $value["preg_pregunta"];
-      $respostes[$value["preg_pregunta"]] = $value["resp_correcte"] . ";" . $value["resp_incorrecte_1"] . ";" . $value["resp_incorrecte_2"] . ";" . $value["resp_incorrecte_3"] ;
-      $i++;
-    }
-
-    //print_r ($preguntes[2], false);
-    //print_r ($preguntes[2], false);
-    //print_r ($preguntes[3], false);
-    //print_r ($respostes_correctes[$preguntes[2]], false);
-    //print_r ($respostes[$preguntes[2]], false);
-    //$todas_respuestas = explode(";", $respostes[$preguntes[2]]);
-    $preg = json_encode($preguntes,JSON_UNESCAPED_UNICODE);
-    $resp = json_encode($respostes,JSON_UNESCAPED_UNICODE);
-    $correctes = json_encode($respostes_correctes,JSON_UNESCAPED_UNICODE);
-    //print_r (, false);
+  
   ?>
 
 
@@ -149,7 +128,21 @@
                               </a>
                             </div>
                             <div class="modal-body">
-                              Configuracio de la partida 
+                            <div class="form-check form-switch">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Tiempo por turno</label>
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                          </div>
+                          
+                          <br>
+                          <label for="disabledRange" class="form-label">Disabled range</label>
+                          <input type="range" class="form-range" id="disabledRange" disabled>
+                          <br>
+                          <br>
+                          <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+  <label class="form-check-label" for="flexSwitchCheckDefault">Ayudas/Comodin</label>
+</div>
+                        </div>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
