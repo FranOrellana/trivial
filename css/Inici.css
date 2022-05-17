@@ -1,17 +1,7 @@
-#grad1 {
-    height: 50px;
-    width: 50%;
-    background-color:purple;/* For browsers that do not support gradients */
-    background-image: linear-gradient(to bottom right, rgb(252, 239, 59),rgba(255, 253, 142, 0.993),rgb(252, 239, 59));
-}
-
-{
-box-sizing: border-box;
-}
 
 body {
 font-family: Arial, Helvetica, sans-serif;
-background-image: url("https://img.pixers.pics/pho_wat(s3:700/FO/69/33/54/82/700_FO69335482_1a545b3b83877653eae83ec280e580f2.jpg,700,700,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,650,jpg)/fotomurales-azteca-modelo-inconsutil-tribal-en-el-fondo-cosmico.jpg.jpg");>
+background-image: url("https://img.pixers.pics/pho_wat(s3:700/FO/69/33/54/82/700_FO69335482_1a545b3b83877653eae83ec280e580f2.jpg,700,700,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,650,jpg)/fotomurales-azteca-modelo-inconsutil-tribal-en-el-fondo-cosmico.jpg.jpg");
 font-style: oblique;
 }
 
@@ -110,7 +100,7 @@ hr{
 }
 /*Text peu de pagina*/
 p-footer{
-    color:#9dfcfc;
+    color:#c7fafa;
     font-size: medium;
     font-family:Georgia, 'Times New Roman', Times, serif;
     padding: auto;
@@ -118,8 +108,8 @@ p-footer{
 
 
 #myDIV1{    
-    background-color:#9dfcfcd7;
-    
+    /*background-color:#9dfcfcd7;*/
+    background: rgba(98, 207, 240, 0.4);
     min-height: 100%;
     border-radius:20px;
     border-radius-bot:10px;
@@ -133,26 +123,32 @@ p-footer{
     margin-bottom: 2%;
     margin-right: 2%;
     text-align: center;
-    background-color: #9dfcfc;
+    background-color: #c7fafa;
     border: 1px color:rgb(10, 10, 10);
     border-radius:20px;
     /*padding:auto;*/
 }
 
 #myDIV3{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
     text-align: center;
-    background-color: #9dfcfc;
-    
+    background-color: #c7fafa;
+    border: 1px color:rgb(10, 10, 10);
+    border-radius:20px;
+    /*
+    text-align: center;
+    background-color: #c7fafa;
     border: 1px color:rgb(10, 10, 10);;
     border-radius:20px;
     /*padding:auto;*/
 }
 
 #myDIV4{
-    margin-left: 5%;
     text-align: center;
-    background-color: #9dfcfc;
-    
+    background-color: #c7fafa;
     border: 1px color:rgb(10, 10, 10);;
     border-radius:20px;
     border-radius-bottom:20px;
@@ -160,15 +156,21 @@ p-footer{
 }
 
 #myDIV5{
+    margin-top: 2%;
     margin-left: 8%;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
+    margin-right: 2%;
     text-align: center;
-    
+    background-color: #c7fafa;
+    border: 1px color:rgb(10, 10, 10);
+    border-radius:20px;
 }
 
-.panel-body {background-color:black;}
+button{
+    background: rgb(235, 245, 250);
+}
 
-#button.accordion-body{
-    background-color: #34e693;
+button-f{
+    background-color:transparent;
 }
 

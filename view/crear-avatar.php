@@ -34,7 +34,7 @@
   </head>
   
   <body>
-    <main>
+    <main class="MAIN">
 
     <?php
       $files = scandir('../files/sources/imatges');
@@ -52,8 +52,8 @@
       ================================================== -->
       <!-- Wrap the rest of the page in another container to center all the content. -->
 
-      <div class="container marketing">
-
+      <div id="myDIV1"    class="container marketing" >
+      
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-20">
@@ -99,6 +99,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="../js/perfil.js?v=<?php echo time(); ?>"></script>
-        
+       
   </body>
 </html>

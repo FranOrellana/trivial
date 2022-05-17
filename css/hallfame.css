@@ -29,18 +29,23 @@ p.round3{
 
 
 }
+p.round4{
+    font-size: 45px;
+    text-align: right;
+    color: black;
+}
 p.container:before, .container:after { display:table; content:""; 
 }
 p.container:after { clear:both; 
 }
-p.container { width:50%; margin:800 auto; border:1px solid rgb(243, 196, 196);
+p.container { width:50%; margin:800 auto; border:1px solid rgb(158, 14, 248);
   box-shadow:0px 2px 7px #292929;
   -moz-box-shadow: 0px 2px 7px #292929;
   -webkit-box-shadow: 0px 2px 7px #292929; border-radius:10px;
   -moz-border-radius:10px;
-  -webkit-border-radius:10px; background-color:#f9c6c6; 
+  -webkit-border-radius:10px; background-color:rgb(158, 14, 248); 
   text-align: center;
-    color: black;
+    color: white;
     font-family: "Verdana", "Serif", "monospace";
     font-size: 40px;
 }

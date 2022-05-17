@@ -4,7 +4,7 @@ return array(
     "host"      =>"localhost",
     "user"      =>"root",
     "pass"      =>'',
-    "database"  =>"trivial",
+    "database"  =>"test",
     "charset"   =>"utf8"
 );
 ?>

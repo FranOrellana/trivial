@@ -91,10 +91,11 @@
         $alumne = '
         
 <div class="row">
-  <div class="col" style="text-align:right"><img  alt="Imatge perfil" width="60" height="60" class="rounded-circle flex-shrink-0"  src="'.$ruta.'" </img><br><br></div>
-  <div class="col"><h3 style="text-align:left" >'.$value["nom_jugador"].'</h3></div>
+<div class="col"><p class="round4">'.$i.'</div>  
+<div class="col" style="text-align:right"><img  alt="Imatge perfil" width="60" height="60" class="rounded-circle flex-shrink-0"  src="'.$ruta.'" </img><br><br></div>
+  <div class="col"><h2 style="text-align:left" >'.$value["nom_jugador"].'</h2></div>
   <div class="col"><p style="text-align:left">Puntuació: '.$value["player_punts"].'</p></div>
-  <div class="col">'.$i.'</div> 
+   
 </div>
         ';
       $i++;

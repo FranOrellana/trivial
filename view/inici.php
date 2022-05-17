@@ -14,7 +14,7 @@
                 <img src="../files/sources/imatges/titol.gif" style=center width="20%" height="20%"></img>
             </h1>
         
-        <div id = "myDIV1" class="container">
+        <div id = "myDIV1" class="container";>
             <div class="row">
                 <div id ="myDIV2" class="container col-lg-6">
                     <div class="row">
@@ -25,13 +25,6 @@
                             ?>
                             <p></p>
                         </div>
-                        <div id = "myDIV5" class="container col-lg-10">
-                            <div class="row">
-                                    <button type="button">  <!--onclick='crearpartida()!-->
-                                        <h2>Crear Partida</h2>
-                                    </button>                                    
-                            </div>
-                        </div>
                         <!--
                         <div id ="myDIV4" class="col-lg-5">    
                             <h3>Registrat</h3>
@@ -41,6 +34,14 @@
                             <p>Apodo</p>
                         </div>
                         !-->
+                        <div id = "myDIV5" class="container col-lg-10">
+                            <div class="row">
+                                <button onclick="window.location.href='./crearpartida.php';">
+                                    <h2>Crear Partida</h2>
+                                </button>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="col-lg-1"></div>
@@ -49,12 +50,21 @@
                         <div class="accordion accordion-flush" id="accordionExample">
                             <div class="accordion-item">
                                 <h3 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button card text-white bg-dark mb-3 btn-block " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <button  class="accordion-button card text-white bg-dark mb-3 btn-block " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         <h3 >Hall of Fame</h3>
                                     </button>       
                                 </h3>     
                                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body"></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima dignissimos ea, qui nulla reiciendis obcaecati quasi animi voluptatem non unde voluptate deleniti, corrupti ipsa illo!
+                                        Mollitia inventore unde aut velit asperiores soluta quod repellendus quasi veritatis quae voluptatum atque, perferendis cumque quisquam assumenda cupiditate incidunt eligendi doloremque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        
+                                    </p>
+                                    <!--
+                                    <?php
+                                        //include './hallfame.php';
+                                    ?>
+                                    !--> 
                                 </div>
                             </div>
                         </div>
@@ -74,12 +84,17 @@
                             <div>
                                 <section>   
                                     <article>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima dignissimos ea, qui nulla reiciendis obcaecati quasi animi voluptatem non unde voluptate deleniti, corrupti ipsa illo! Necessitatibus vel odit voluptatibus! Ipsa ab consectetur tenetur magnam perferendis pariatur, soluta illo eaque? Perferendis itaque exercitationem eveniet et iusto, porro perspiciatis blanditiis dolor amet suscipit!
-                                        Mollitia inventore unde aut velit asperiores soluta quod repellendus quasi veritatis quae voluptatum atque, perferendis cumque quisquam assumenda cupiditate incidunt eligendi doloremque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique doloribus perspiciatis facere amet nostrum fugit, ipsum nesciunt velit placeat quaerat sint vero tempore mollitia aliquid impedit numquam, modi voluptatum consequatur.
-                                        Mollitia inventore unde aut velit asperiores soluta quod repellendus quasi veritatis quae voluptatum atque, perferendis cumque quisquam assumenda cupiditate incidunt eligendi doloremque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique doloribus perspiciatis facere amet nostrum fugit, ipsum nesciunt velit placeat quaerat sint vero tempore mollitia aliquid impedit numquam, modi voluptatum consequatur.
-                                        </p>
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint nam voluptatem eum architecto quos saepe nisi eveniet, iste non vel quidem et minus. Recusandae quia aspernatur explicabo ea similique esse?</p>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia inventore unde aut velit asperiores soluta quod repellendus quasi veritatis quae voluptatum atque, perferendis cumque quisquam assumenda cupiditate incidunt eligendi doloremque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique doloribus perspiciatis facere amet nostrum fugit, ipsum nesciunt velit placeat quaerat sint vero tempore mollitia aliquid impedit numquam, modi voluptatum consequatur.</p>
+                                        <p>
+                                            !!!!!!!!!!!!!!!!!!!!!Juga al nostre Trivial!!!!!!!! SIIIIIIIIIIIIIII
+                                            <br></br>
+                                                Sabias que Alemania hasen cossas buenas?
+                                            <br></br>
+                                                Estaras diciendo WOW cada ves que uses este programa.
+                                                Aprofita y JUEGA AHORA POR TAN SOLO diesinueve noventaicinco $  !!!!!!!!!!
+                                                <br></br>
+                                                Lore unde aut velit asperiores soluta quod repellendus quasi veritatis quae voluptatum atque, perferendis cumque quisquam assumenda cupiditate incidunt eligendi doloremque? 
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique doloribus perspiciatis facere amet nostrum fugit, ipsum nesciunt velit placeat quaerat sint vero tempore mollitia aliquid impedit numquam, modi voluptatum consequatur.
+                                            </p>
                                     </article>
                                 </section>
                             </div>

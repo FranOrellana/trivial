@@ -6,12 +6,24 @@
 	src: url(../files/sources/fuentes/Bing\ Bam\ Boum.woff2);
   }
 
+html{
+  border: solid white 4px;
+}  
+
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: #5a5a5a;
+  color: #000000;
   font-family: quieloprobartuboca;
+  background-image:url("../files/sources/imatges/colorines fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
 }
+
+
 
 
 /* CUSTOMIZE THE CAROUSEL

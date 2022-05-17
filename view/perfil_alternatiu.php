@@ -85,7 +85,7 @@
             <div class="input-group has-validation">
               <span class="input-group-text">@</span>
               <input type="text" class="form-control" id="username" placeholder="Username" required>
-            <div class="invalid-feedback">
+            <div class="invalid-feedback"> 
                 Your username is required.
               </div>
             </div>
@@ -114,8 +114,22 @@
       <h4 class="mb-3">Informació del jugador</h4>
 
           <div class="col-12">
-            <label for="email" class="form-label">Email </label>
-            <input type="email" class="form-control" id="email" placeholder="you@example.com" disabled>
+            <label for="ranking" class="form-label">Ranking </label>
+            <input type="email" class="form-control" id="ranking" placeholder=" " disabled>
+            <div class="invalid-feedback">
+              Please enter a valid email address for shipping updates.
+            </div>
+
+            <div class="col-12">
+            <label for="ranking" class="form-label">Partides Guanyades </label>
+            <input type="email" class="form-control" id="Partides guanyades" placeholder=" " disabled>
+            <div class="invalid-feedback">
+              Please enter a valid email address for shipping updates.
+            </div>
+
+            <div class="col-12">
+            <label for="ranking" class="form-label">Respostes correctes </label>
+            <input type="email" class="form-control" id="Respostes correctes" placeholder=" " disabled>
             <div class="invalid-feedback">
               Please enter a valid email address for shipping updates.
             </div>

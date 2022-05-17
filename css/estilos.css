@@ -12,6 +12,10 @@ a {
 	text-decoration: none;
 }
 
+.br{
+	
+}
+
 .contenedor {
 	width: 90%;
 	max-width: 1000px;
@@ -141,3 +145,18 @@ a {
 .image-upload>input {
 	display: none;
   }
+
+  #myDIV1{
+	  text-align: center;
+  }
+
+  .MAIN{
+
+	object-position: center;
+
+  }
+
+
+
+
+  
