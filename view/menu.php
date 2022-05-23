@@ -106,7 +106,7 @@ $conexion=$conectar->conexion();
   <header class="p-3 mb-3 border-bottom">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+        <a href="./inici.php" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
        <img src="../files/sources/imatges/titol.gif"width="60" height="60">
         
       </a> 
@@ -133,8 +133,7 @@ $conexion=$conectar->conexion();
           <button type="button" onclick="SingOut()"  class="btn btn-primary <?php echo $classe_amagar ?>"><?php echo $traduccions["Inicia sesión"] ?></button>
         </div>
           <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle <?php echo $classe_escondite ?>" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-          </a>
+            <img src="" alt="mdo" width="32" height="32" class="rounded-circle">
           <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
             <li><a class="dropdown-item" href="#">Metas</a></li>
             <li><a class="dropdown-item" href="#">Settings</a></li>
