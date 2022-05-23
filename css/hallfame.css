@@ -38,7 +38,7 @@ p.container:before, .container:after { display:table; content:"";
 }
 p.container:after { clear:both; 
 }
-p.container { width:50%; margin:800 auto; border:1px solid rgb(158, 14, 248);
+p.container { width:50%; margin:700 auto; border:1px solid rgb(158, 14, 248);
   box-shadow:0px 2px 7px #292929;
   -moz-box-shadow: 0px 2px 7px #292929;
   -webkit-box-shadow: 0px 2px 7px #292929; border-radius:10px;
@@ -52,4 +52,9 @@ p.container { width:50%; margin:800 auto; border:1px solid rgb(158, 14, 248);
 #div1{
     float: right;
 
+}
+div.col {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

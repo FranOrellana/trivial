@@ -30,7 +30,7 @@ class TrivialController
     }
 
     public function pujarfitxer(){
-        $target_dir = "./files/sources/imatges/";
+        $target_dir = "./files/sources/imatges/imatges-usuaris/";
         if (isset($_COOKIE["ID"])){
             $identificador = $_COOKIE["ID"];
             $target_file = $target_dir . "imagenmolonga" . $identificador . ".jpg";
