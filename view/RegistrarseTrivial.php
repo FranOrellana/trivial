@@ -24,18 +24,18 @@
             <span>Cool Trivial</span>
     </h1>
         <p>Para poder disfrutar de más opciones es recomendable registrarse:</p>
-    <form action="./reg_ok.php" method="post">
+    <form action="../index.php" method="post">
     <div class="field">
         <input id="Usuario" name="Usuario" type="text" placeholder=" " required>
         <label for="Usuario">Usuario</label>
     </div>
     <div class="field">
-    	<input id="email" type="email" placeholder=" " required>
+    	<input id="email" name = "email" onfocusout="alert(2)" type="email" placeholder=" " required>
         <label for="email">eMail</label>
     </div>    
     <div class="field">
         
-        <input type="password" placeholder=" " id="Contra" required><div id="Ojo1"><i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i></div>
+        <input type="password" placeholder=" " name="Contra" id="Contra" required><div id="Ojo1"><i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i></div>
         <label for="Contraseña">Contraseña:</label>
     </div>
     <div class="field">

@@ -8,12 +8,13 @@
     </head>
     <body>
         <footer>
-        <hr></hr>
+        <hr style="width:86%;text-align:left;margin-left:7%"></hr>
+            <!-- width:86%;text-align:left;margin-left:7%" !-->
             <div class="container col-sm-8";>
                 <div class="row">
                     <div class="col-sm-2"></div>
                     <div class="col-sm-2">
-                        <button-f onclick="window.location.href='./trivialavislegal.php';">
+                        <button-f onclick="window.location.href='./avislegal.php';">
                             <p-footer >Terminos de Servicio</p-footer>
                         </button-f>
                     </div>
@@ -23,7 +24,7 @@
                         </button-f>
                     </div>
                     <div class="col-sm-2">
-                        <button-f onclick="window.location.href='./peu_pagina.php';">
+                        <button-f onclick="window.location.href='./faqs.php';">
                             <p-footer>Faqs</p-footer>
                         </button-f>   
                     </div>

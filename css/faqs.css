@@ -4,6 +4,15 @@ body{
 
 }
 .h1{
-    text-align: center;
+    text-align: 100%;
     color: aliceblue;
+}
+.h2{
+    text-align: left;
+    color: aliceblue;
+}
+.p{
+    font-size: 20px ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }

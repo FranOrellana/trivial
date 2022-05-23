@@ -53,14 +53,16 @@
     color: rgba(0,0,0,.6);
     border: none;
     box-shadow: none;
-    border-radius: 0;
+    border-radius: 4px;
   }
   
   #Gradi {
     background-image: linear-gradient(to bottom right,rgb(162, 6, 252),rgb(189, 74, 255) );
   }
   body{
-    background-color: rgb(162, 6, 252);
+    
+    background-image: url("../files/MuralNoice.jpg");
+
   }
 
   h1 span{
@@ -88,7 +90,7 @@ background-color: #d98f40;
   color: #fff;
   border: none;
   padding: 16px 24px;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 #RegistBTN:hover{
@@ -109,6 +111,7 @@ transform: translateY(4px);
 .column {
   float: left;
   width: 40%;
+  background-color: rgb(162, 6, 252);
 }
 
 

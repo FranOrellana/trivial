@@ -5,7 +5,7 @@
 <body>
 <i><h1 style="text-align:center;" ><B><FONT COLOR="black"><h3><p style="font-family:'Times New Roman', Times, serif">Aviso Legal</p></h3></h1></i></FONT>
 
-<body style="size:1040px;height:600px;background:url('../imatges/minimalist.png') no-repeat; background-size: 100% 100%;">
+<body style="size:1040px;height:600px;background:url('../files/avislegal/minimalist.png') no-repeat; background-size: 100% 100%;">
 
 <html>
 <head>

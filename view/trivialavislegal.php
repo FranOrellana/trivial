@@ -50,7 +50,7 @@ if ($resp != null && $resp->success) {
       <br>
       <br>
       <br>
-      <img style="margin: auto; center" src="./imatges/captcha.gif"img>
+      <img style="margin: auto; center" src="../files/avislegal/captcha.gif"img>
     </form>
 
     <script>

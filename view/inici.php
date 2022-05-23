@@ -7,9 +7,8 @@
     </head>
     <body>
         <?php
-            //include './menu.php';
-        ?>
-        
+                include './menu.php';      
+        ?>      
             <h1>
                 <img src="../files/sources/imatges/titol.gif" style=center width="20%" height="20%"></img>
             </h1>
@@ -20,6 +19,7 @@
                     <div class="row">
                         <div id ="myDIV4" class="col-lg-10 ">
                             <h3>Anónim</h3>
+                            
                             <?php
                                 include './crear-avatar.php';
                             ?>
@@ -40,34 +40,29 @@
                                     <h2>Crear Partida</h2>
                                 </button>
                             </div>
-                        </div>
-                        
+                        </div>  
                     </div>
                 </div>
+                
                 <div class="col-lg-1"></div>
                 <div id ="myDIV2" class="col-lg-4">
-       
-                        <div class="accordion accordion-flush" id="accordionExample">
-                            <div class="accordion-item">
-                                <h3 class="accordion-header" id="headingOne">
-                                    <button  class="accordion-button card text-white bg-dark mb-3 btn-block " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <h3 >Hall of Fame</h3>
-                                    </button>       
-                                </h3>     
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body"></div>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima dignissimos ea, qui nulla reiciendis obcaecati quasi animi voluptatem non unde voluptate deleniti, corrupti ipsa illo!
-                                        Mollitia inventore unde aut velit asperiores soluta quod repellendus quasi veritatis quae voluptatum atque, perferendis cumque quisquam assumenda cupiditate incidunt eligendi doloremque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                        
-                                    </p>
-                                    <!--
-                                    <?php
-                                        //include './hallfame.php';
-                                    ?>
-                                    !--> 
-                                </div>
+                    <div class="accordion accordion-flush" id="accordionExample">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button  class="accordion-button card text-white bg-dark mb-3 btn-block " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <h3 >Hall of Fame</h3>
+                                </button>       
+                            </h3>     
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body"></div>
+                                    <!-- <p>
+                                        <?php
+                                            //  include './hallfame.php';
+                                        ?>
+                                    </p> -->
                             </div>
                         </div>
+                    </div>
                     
                 </div>
             </div>
