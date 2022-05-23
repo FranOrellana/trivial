@@ -29,6 +29,9 @@
           font-size: 3.5rem;
         }
       }
+      .tr{
+        text-anchor: middle;
+      }
     </style>
 
     
@@ -130,12 +133,19 @@
                             <div class="modal-body">
                             <div class="form-check form-switch">
                             <label class="form-check-label" for="flexSwitchCheckDefault">Tiempo por turno</label>
-                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                          <input class="form-check-input" type="checkbox" onclick="activarTiempo()" role="switch" id="idactivar">
                           </div>
                           
                           <br>
-                          <label for="disabledRange" class="form-label">Disabled range</label>
-                          <input type="range" class="form-range" id="disabledRange" disabled>
+                          <label for="disabledRange" class="form-label">Tiempo (Min)</label>
+                          <br>
+                          <tr class="tr">
+                            <th>|5|</th>
+                            <th>|10|</th>
+                            <th>|15|</th>
+                            <th>|20|</th>
+                        </tr>
+                          <input type="range" class="form-range" min="0" max="3" step="1,25" id="idtiempo"disabled>    
                           <br>
                           <br>
                           <div class="form-check form-switch">
@@ -189,6 +199,18 @@
  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="../js/joc.js?v=<?php echo time();?>"></script>
+<script> 
+
+  function activarTiempo(){
+    if (document.getElementById("idactivar").checked ){
+      document.getElementById("idtiempo").disabled = false;
+    }else {
+      document.getElementById("idtiempo").disabled = true;
+    }
+  }
+  
+   
+</script>
       
   </body>
 </html>
