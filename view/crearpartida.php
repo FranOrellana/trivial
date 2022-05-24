@@ -159,7 +159,7 @@
                               <br>
                               <br>
                               <label class="form-check-label" for="comodin">
-                              Comodines
+                              ComodinesX
                               </label>
                               <br>
                               
