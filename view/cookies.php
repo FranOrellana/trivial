@@ -43,5 +43,9 @@ Deshabilitar, rechazar y eliminar cookies
 El Usuario puede deshabilitar, rechazar y eliminar las cookies —total o parcialmente— instaladas en su dispositivo mediante la configuración de su navegador (entre los que se encuentran, por ejemplo, Chrome, Firefox, Safari, Explorer). En este sentido, los procedimientos para rechazar y eliminar las cookies pueden diferir de un navegador de Internet a otro. En consecuencia, el Usuario debe acudir a las instrucciones facilitadas por el propio navegador de Internet que esté utilizando. En el supuesto de que rechace el uso de cookies —total o parcialmente— podrá seguir usando el Sitio Web, si bien podrá tener limitada la utilización de algunas de las prestaciones del mismo.
 
 Este documento de Política de Cookies ha sido creado mediante el generador de plantilla de política de cookies online el día 19/05/2022.</h2>
+<div>
+<button class="button" type="button">Aceptar</button>
+<button class="button" type="button">Cancelar</button>
+</div>
 
 </body>

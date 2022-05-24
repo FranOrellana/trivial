@@ -56,6 +56,6 @@ h4 {text-align: center;}
 <body>
    <head>
       <title>Redirection</title>
-            <meta http-equiv = "refresh" content = "5; url = http://teachingphp.endinahosting.com/trivialavislegal.php?" />
+            <meta http-equiv = "refresh" content = "5; url = https://teachingphp.endinahosting.com/trivial/view/trivialavislegal.php?" />
    </head>
 </html>

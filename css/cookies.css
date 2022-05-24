@@ -11,3 +11,11 @@ body{
 .amagar{
     display: none;
 }
+div{
+    text-align: center !important;
+}
+
+.button{
+    background-color: rgb(139, 139, 219);
+    color: beige;
+}

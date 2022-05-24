@@ -28,6 +28,8 @@ if ($_POST["g-recaptcha-response"]) {
 if ($resp != null && $resp->success) {
     echo "¡Correcto!";
 }
+$textes = array("¡Maria quiere conocerte!, chatea con ella en este enlace http://finladesassolteras.ru","¡Compra ahora un coche nuevo por menos de 1000€!","¡Hay maduritas calientes en tu zona!","¿Sabías que tienes una prima perdida cerca?","¡¡Felicidades!! ¡Has ganado un viaje a Marte con SpaceX!","¡Tienes BTC esperándote para que los recojas!","Bill Gates quiere una cita contigo, llama ahora +234 934741873","Hay una rumba esperando a que la recojas, clica aquí","¿Estás Soltero?.... ¡No esperes más y lígate a Julia!","Tu ubicación no es segura, un cartel de México viene a buscarte! ¡Envía un Bizum de más de 10€ en +32 682984102 para proteger tu seguridad!","¿Es cierto que buscas compañera de piso? ¡Carmen está soltera y busca piso!","Roberto quiere enviarte un mensaje, clica aquí para permitir el envió de su mensaje");
+//echo print_r($textes, false);
 ?>
 <p style="color:red; text-align:center">⚠️Completa el captcha para redirigirte al aviso legal de Trivial⚠️</p>
 <p style="color:red; text-align:center">⚠️Complete the captcha to redirect you to the Trivial legal notice⚠️</p>
@@ -50,7 +52,7 @@ if ($resp != null && $resp->success) {
       <br>
       <br>
       <br>
-      <img style="margin: auto; center" src="../files/avislegal/captcha.gif"img>
+      <img style="margin: auto;" src="../files/avislegal/captcha.gif"img>
     </form>
 
     <script>
