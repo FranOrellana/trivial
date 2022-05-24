@@ -162,14 +162,34 @@ class TrivialController
         }
     }
 
-    public function crearJugador(){
-        $jugador = new Jugador("NomJugador",1);
-
-
+    public function validaremail(){
+        $useremail = $_GET["email"];
+        $sql = " SELECT * from usuaris_registrats where usr_email ='". $useremail ."'" ;  
+        $result = $this->adapter -> query($sql);
+        if ($result->num_rows > 0){
+            //print_r("USUARI JA REIGSTRAT"); 
+            echo 0;   
+        }else{
+            //print_r("USUARI NO REIGSTRAT");    
+            echo 1;
+        }
     }
 
-    public function FinalitzaPartida(){
-        
+    public function crearJugador(){
+        if (!isset($_COOKIE["USR_ID"])){
+            //Jugador anonim, sense USR_ID
+            $jugador = new Jugador(null,$_COOKIE["NOMJUGADOR"]);
+        }else{
+            //Jugador logat, utilitzem USR_ID
+            $jugador = new Jugador($_COOKIE["USR_ID"],$_COOKIE["NOMJUGADOR"]);
+        }
+        $jugador->guardarJugador($this->adapter,);
+
+    }
+    public function finalitzaPartida(){
+        $_GET["jug_id"];
+        $sql = " SELECT * from partida where id =". $_GET["id"];  
+        $result = $this->adapter -> query($sql);
     }
 }
 

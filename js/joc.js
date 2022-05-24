@@ -251,3 +251,11 @@ function generateGraph(){
     }
   });
 }
+
+function submitUsername(){
+  if(document.getElementById("usernameInput").value !== null){
+    document.cookie = "NOMJUGADOR="+document.getElementById("usernameInput").value;
+    document.getElementById("anon").classList.remove("d-none");
+    location.reload();
+  }
+}

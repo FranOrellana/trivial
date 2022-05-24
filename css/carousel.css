@@ -16,6 +16,8 @@
   
   }
 
+ 
+
   .container_dani{
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -40,11 +42,17 @@
   }
   
   
-  h2{
+  #titulo1{
   color:rgb(255, 55, 0);
+  text-align: center;
   
   }
   
+  #p1{
+    text-align: center;
+    
+    }
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 

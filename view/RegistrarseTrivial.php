@@ -31,9 +31,10 @@
     </div>
     <label id ="UsuarioErr" forerr="UsuarioErr" hidden>Usuario ya registrado, escoge otro</label>
     <div class="field">
-    	<input id="email" name = "email"  type="email" placeholder=" " required>
+    	<input id="email" name = "email" onfocusout = "validateEmail()" type="email" placeholder=" " required>
         <label for="email">eMail</label>
-    </div>    
+    </div>
+    <label id ="EmailErr" forerr="EmailErr" hidden>Email ya registrado, escoge otro</label>
     <div class="field">
         
         <input type="password" placeholder=" " name="Contra" id="Contra" required><div id="Ojo1"><i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i></div>

@@ -96,6 +96,20 @@
       <!-- /.container -->
       </div>
 
+      <h2 id="titulo1">¿Quieres tener musculatura de dios griego?</h2>
+
+      <p id="p1">¡¡ESTAS DE SUERTE!!.</p>
+
+<p id="p1">Crea tu propio avatar para tranformate en una bestia de musculos.</p>
+
+<div style ="text-align:center;">
+<button onclick="document.getElementById('myImage').src='../files/sources/imatges/mamado.png '">Despues de crear avatar</button>
+
+<img id="myImage" src="../files/sources/imatges/gordinflon.png" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='../files/sources/imatges/gordinflon.png'">Antes de crear avatar</button>
+    </div>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="../js/perfil.js?v=<?php echo time(); ?>"></script>

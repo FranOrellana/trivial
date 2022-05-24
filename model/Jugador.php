@@ -10,7 +10,7 @@ class Jugador
     var $puntos;
     var $aciertos;
 
-    function __construct($miNom,$mi_usr_id){
+    function __construct($mi_usr_id,$miNom){
 
         $this->nom = $miNom;
         $this->ranking = 0;
@@ -64,6 +64,16 @@ class Jugador
         return $this->aciertos;
     }
 
+    function guardarJugador($conexion){
+        if (!isset($this->usr_id)){
+            $sql = "INSERT INTO jugadors (usr_id, jug_nom) values (null".",'".$this->nom."');";
+        }else{
+            $sql = "INSERT INTO jugadors (usr_id, jug_nom) values (".$this->usr_id.",'".$this->nom."');";
+        }
+     
+        print_r($sql);
+        // $result = $conexion -> query($sql);
+    }
     function updateJugador($conexion, $id,$puntsJug,$aciertosJug){
         $sql = "UPDATE JUGADORS SET jug_punts =".$puntsJug.", jug_aciertos =".$aciertosJug. " WHERE ID=". $id;
         $updatePlayer = $conexion -> query($sql);

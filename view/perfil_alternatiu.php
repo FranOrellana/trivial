@@ -20,6 +20,10 @@ include 'menu.php';
       //print_r ($value, false);
       //$traduccions[$value["IDIOMA_ES"]] = $value[$nom_columna];
     }
+    $rutaimatge = "../files/sources/imatges/imagenmolonga" . $_GET["ID"] . ".jpg";
+    if (!file_exists($rutaimatge)){
+      $rutaimatge = "../files/sources/imatges/imagenmolongadefecte.jpg";
+    }
 ?>
   <head>
     <meta charset="utf-8">
@@ -75,14 +79,13 @@ include 'menu.php';
 <div class="container">
   <main>
     <div class="py-5 text-center">
-      <img class="d-block mx-auto mb-4" src="../files/andrea.jpg" alt="" width="72" height="57">
       <h2>Pàgina de perfil</h2>
       <p class="lead">Aquí podràs modificar les teves dades</p>
     </div>
 
     <div class="row g-5">
       <div class="col-md-5 col-lg-4 order-md-first">
-      <img id="imatge_perfil"  class="bd-placeholder-img rounded-circle" width="100%" height="350" src="../files/<?php echo $usuari;  ?>.jpg" </img>
+      <img id="imatge_perfil"  class="bd-placeholder-img rounded-circle" width="100%" height="350" src="<?php echo $rutaimatge;  ?>" </img>
 
       <form class="card p-2">
         <a  class="btn btn-secondary" onclick="next('<?php echo $rutas;  ?>')" >Next</a> 
@@ -94,7 +97,7 @@ include 'menu.php';
       </div>
       <div class="col-md-7 col-lg-8">
       <h4 class="mb-3">Aquí pots editar les teves dades</h4>
-        <form>
+     
           <div class="col-12">
             <label for="username" class="form-label">Username</label>
             <div class="input-group has-validation">
@@ -121,8 +124,8 @@ include 'menu.php';
 
          
 
-          <button type="submit" class="btn btn-primary">Actualitzar</button>
-        </form>
+          <button type="submit" onclick ="actualitzaPerfil()" class="btn btn-primary">Actualitzar</button>
+       
       </div>
       <hr>
       <div class="col-md-7 col-lg-8">
@@ -135,12 +138,6 @@ include 'menu.php';
               Please enter a valid email address for shipping updates.
             </div>
 
-            <div class="col-12">
-            <label for="ranking" class="form-label">Partides Guanyades </label>
-            <input type="email" class="form-control" id="Partides guanyades" placeholder=" " disabled>
-            <div class="invalid-feedback">
-              Please enter a valid email address for shipping updates.
-            </div>
 
             <div class="col-12">
             <label for="ranking" class="form-label">Última connexió </label>

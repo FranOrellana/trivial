@@ -11,7 +11,16 @@ if(isset($_COOKIE["usuari"])){
 } 
 if(! isset($_COOKIE["usuari"])){
   $classe_escondite = "escondite";
-}    
+}   
+  $id_usuari = 0;
+  $ruta_imatge ="../files/Perfils/perfil_defecte.png";
+  if (isset($_COOKIE["Usid"])){
+    $id_usuari = $_COOKIE["Usid"];
+    $ruta_imatge = "../files/Perfils/perfil_" . $id_usuari.".jpg";
+    if (!file_exists($ruta_imatge) ){
+      $ruta_imatge ="../files/Perfils/perfil_defecte.png";
+    }
+  }
 
 /* definicio de idiomes i crida a la DB*/
 
@@ -132,8 +141,8 @@ $conexion=$conectar->conexion();
           <button type="button"  onclick="login()" class="btn btn-light text-dark me-2 <?php echo $classe_amagar ?>"><?php echo $traduccions["Registrarse"]?></button>
           <button type="button" onclick="SingOut()"  class="btn btn-primary <?php echo $classe_amagar ?>"><?php echo $traduccions["Inicia sesión"] ?></button>
         </div>
-          <a href="##" class="d-block link-dark text-decoration-none dropdown-toggle <?php echo $classe_escondite ?>" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="" alt="mdo" width="32" height="32" class="rounded-circle">
+        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle <?php echo $classe_escondite ?>" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="<?php echo $ruta_imatge?>" alt="mdo" width="32" height="32" class="rounded-circle"></img></a>
           <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
             <li><a class="dropdown-item" href="#"><?php echo $traduccions["Metas"] ?></a></li>
             <li><a class="dropdown-item" href="#"><?php echo $traduccions["Opciones"] ?></a></li>
@@ -141,6 +150,7 @@ $conexion=$conectar->conexion();
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="../index.php?accio=cerrarsesion"><?php echo $traduccions["Cerrar session"] ?></a></li>
           </ul>
+    
         </div>
       </div>
     </div>
