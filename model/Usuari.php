@@ -48,21 +48,25 @@ class Usuari
     function save($connect){
         
         if ($this->existeixUsuarioEmail($connect)){
-
+        
         }
+        else
+           {
+            $sql = "INSERT INTO usuaris_registrats (usr_username, usr_pwd, usr_email) values ('".$this->usr_cname."','".$this->contrasenya."','".$this->email."')";  
+            //print_r($sql);
+            if ($connect -> connect_errno) {
+                //print("error");
+                echo "Failed to connect to MySQL: " . $connect -> connect_error;
+                exit();
+              }else{
+                //print("no error");
+                $result = $connect -> query($sql);
+                //print_r($result,false);
+        
+              }
+           }
 
-        $sql = "INSERT INTO usuaris_registrats (usr_username, usr_pwd, usr_email) values ('".$this->usr_cname."','".$this->contrasenya."','".$this->email."')";  
-        //print_r($sql);
-        if ($connect -> connect_errno) {
-            //print("error");
-            echo "Failed to connect to MySQL: " . $connect -> connect_error;
-            exit();
-          }else{
-            //print("no error");
-            $result = $connect -> query($sql);
-            //print_r($result,false);
-    
-          }
+       
        
     }
 

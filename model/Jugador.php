@@ -10,13 +10,13 @@ class Jugador
     var $puntos;
     var $aciertos;
 
-    function __construct($miNom,$miRanking,$mi_usr_id,$misPuntos,$misAciertos){
+    function __construct($miNom,$mi_usr_id){
 
         $this->nom = $miNom;
-        $this->ranking = $miRanking;
+        $this->ranking = 0;
         $this->usr_id = $mi_usr_id;
-        $this->puntos = $misPuntos;
-        $this->aciertos = $misAciertos;
+        $this->puntos = 0;
+        $this->aciertos = 0;
     }
 
     //Funciones o métodos
@@ -62,6 +62,12 @@ class Jugador
     function getAciertos(){
 
         return $this->aciertos;
+    }
+
+    function updateJugador($conexion, $id,$puntsJug,$aciertosJug){
+        $sql = "UPDATE JUGADORS SET jug_punts =".$puntsJug.", jug_aciertos =".$aciertosJug. " WHERE ID=". $id;
+        $updatePlayer = $conexion -> query($sql);
+
     }
 
 }

@@ -76,6 +76,7 @@ class Partida
         foreach ($resultPartida as $value){
             //print_r($value, false);
             $this->nom = $value["part_nom"];
+            $this->preguntes = $value["part_preguntes"];
         }
     }
 }

@@ -6,6 +6,45 @@
 	src: url(../files/sources/fuentes/Bing\ Bam\ Boum.woff2);
   }
 
+
+  html{
+    border: solid white 4px;
+  }  
+  
+  body {
+
+  
+  }
+
+  .container_dani{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #000000;
+    font-family: quieloprobartuboca;
+    background-image:url("../files/sources/imatges/globo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  
+  }
+  
+  .bgimg {
+  
+    filter:blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100px;
+    width: 100px;
+  
+  
+  }
+  
+  
+  h2{
+  color:rgb(255, 55, 0);
+  
+  }
+  
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 

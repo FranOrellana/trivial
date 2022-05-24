@@ -26,11 +26,12 @@
         <p>Para poder disfrutar de más opciones es recomendable registrarse:</p>
     <form action="../index.php" method="post">
     <div class="field">
-        <input id="Usuario" name="Usuario" type="text" placeholder=" " required>
+        <input id="Usuario" name="Usuario" onfocusout = "validateUsername()" type="text" placeholder=" " required>
         <label for="Usuario">Usuario</label>
     </div>
+    <label id ="UsuarioErr" forerr="UsuarioErr" hidden>Usuario ya registrado, escoge otro</label>
     <div class="field">
-    	<input id="email" name = "email" onfocusout="alert(2)" type="email" placeholder=" " required>
+    	<input id="email" name = "email"  type="email" placeholder=" " required>
         <label for="email">eMail</label>
     </div>    
     <div class="field">
@@ -52,7 +53,7 @@
     </form>
     <!-- Trigger/Open The Modal -->
             </div>
-            <div class="column"></div>
+            <div class="column2"></div>
         </div>
         
     
@@ -120,15 +121,7 @@
         <div id="Gradi"></div>
         </body>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script type="text/javascript" src="../js/MatchPass.js?v=<?php echo time(); ?>"></script>
+        <script type="text/javascript" src="../js/ConfUsr.js?v=<?php echo time(); ?>"></script>
 </html>
-
-
-
-
-
-
-
-
-
-

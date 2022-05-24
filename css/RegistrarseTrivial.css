@@ -103,15 +103,30 @@ background-color: #b65e00;
 box-shadow: 0 5px #666;
 transform: translateY(4px);
 }
-.container{
 
-}
+
+
 
 
 .column {
   float: left;
+  padding: 12px;
   width: 40%;
-  background-color: rgb(162, 6, 252);
+  background-color: rgb(6, 174, 252);
+}
+
+.column2 {
+  width: 60%;
+}
+
+@media only screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    
+  }
+  .column2 {
+    width: 0%;
+  } 
 }
 
 
