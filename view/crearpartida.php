@@ -29,9 +29,19 @@
           font-size: 3.5rem;
         }
       }
-      .tr{
-        text-anchor: middle;
+      .modal-footer{
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0.75rem;
+        border-top: 1px solid #dee2e6;
+        border-bottom-right-radius: calc(0.3rem - 1px);
+        border-bottom-left-radius: calc(0.3rem - 1px);
       }
+     
     </style>
 
     
@@ -134,29 +144,34 @@
                             <div class="form-check form-switch">
                             <label class="form-check-label" for="flexSwitchCheckDefault">Tiempo por turno</label>
                           <input class="form-check-input" type="checkbox" onclick="activarTiempo()" role="switch" id="idactivar">
-                          </div>
+                        </div>
                           
                           <br>
                           <label for="disabledRange" class="form-label">Tiempo (Min)</label>
                           <br>
-                          <tr class="tr">
-                            <th>|5|</th>
-                            <th>|10|</th>
-                            <th>|15|</th>
-                            <th>|20|</th>
-                        </tr>
-                          <input type="range" class="form-range" min="0" max="3" step="1,25" id="idtiempo"disabled>    
+                          <input type="range" class="form-range" min="5" max="20" step="5" id="idtiempo"disabled oninput="this.nextElementSibling.value = this.value"> <output>5</output>    
                           <br>
                           <br>
-                          <div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-  <label class="form-check-label" for="flexSwitchCheckDefault">Ayudas/Comodin</label>
-</div>
-                        </div>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" onclick="activarComodin()" role="switch" id="activarComodin">
+                              <label class="form-check-label" for="flexSwitchCheckDefault">Activar comodin</label>
+                            </div>
+                              <br>
+                              <br>
+                              <label class="form-check-label" for="comodin">
+                              Comodines
+                              </label>
+                              <br>
+                              
+                                 <input class="form-check-input" type="checkbox" onclick="" value="" id="comodin1" disabled> 
+                                 
+                              
+                              </div>
+                            </div>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                              <button type="button" class="btn btn-primary">Guardar configuracion</button>
+                              <button type="button" class="btn btn-primary" onclick="GuardarC()">Guardar configuracion</button>
                             </div>
                           </div>
                         </div>
@@ -208,8 +223,19 @@
       document.getElementById("idtiempo").disabled = true;
     }
   }
-  
-   
+    function GuardarC(){
+
+     alert ("La configuración se ha guardado correctamente");
+     }
+        function activarComodin(){
+            alert(1);
+           if (document.getElementById("activarComodin").checked ){
+            document.getElementById("comodin1").disabled = false;
+           }else {
+            document.getElementById("comodin1").disabled = true;
+           }
+          }
+        
 </script>
       
   </body>
